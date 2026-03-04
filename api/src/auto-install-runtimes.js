@@ -19,9 +19,9 @@ const DEFAULT_RUNTIME_SPECS = [
     'sqlite3=3.36.0',
     'c=10.2.0',
     'ruby=3.0.1',
-    'go=1.16.2',
     'rust=1.68.2',
     'bash=5.2.0',
+    'go=1.16.2',
 ];
 
 const LANGUAGE_TO_PACKAGE = {

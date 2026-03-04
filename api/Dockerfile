@@ -15,7 +15,7 @@ FROM node:15.10.0-buster-slim
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PISTON_AUTO_INSTALL_RUNTIMES=true
 ENV PISTON_AUTO_INSTALL_FAIL_ON_ERROR=true
-ENV PISTON_AUTO_INSTALL_PACKAGES="csharp=6.12.0,python=3.10.0,java=15.0.2,javascript=18.15.0,c++=10.2.0,sqlite3=3.36.0,c=10.2.0,ruby=3.0.1,go=1.16.2,rust=1.68.2,bash=5.2.0"
+ENV PISTON_AUTO_INSTALL_PACKAGES="csharp=6.12.0,python=3.10.0,java=15.0.2,javascript=18.15.0,c++=10.2.0,sqlite3=3.36.0,c=10.2.0,ruby=3.0.1,rust=1.68.2,bash=5.2.0,go=1.16.2"
 
 RUN dpkg-reconfigure -p critical dash
 RUN printf 'Acquire::Check-Valid-Until "false";\nAcquire::AllowInsecureRepositories "true";\n' > /etc/apt/apt.conf.d/99archive && \
